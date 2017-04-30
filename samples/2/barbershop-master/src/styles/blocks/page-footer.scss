@@ -1,0 +1,19 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  color: #ffffff;
+  background: #252525 url("../img/pattern-footer.jpg");
+
+  &--index {
+    margin-top: 30px;
+  }
+
+  &--inner {
+    margin-top: 80px;
+  }
+}
+
+.page-footer__wrapper {
+  @include container;
+  @include clearfix;
+}

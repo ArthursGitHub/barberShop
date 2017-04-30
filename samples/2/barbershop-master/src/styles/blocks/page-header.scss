@@ -1,0 +1,13 @@
+.page-header {
+  margin-bottom: 62px;
+  background-color: #000000;
+
+  &--inner {
+    margin-bottom: 52px;
+  }
+}
+
+.page-header__wrapper {
+  @include container;
+  @include clearfix;
+}

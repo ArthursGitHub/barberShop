@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Барбершоп Бородинский</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container clearfix">
+            <!--центровщик-->
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="price.html">Прайс-лист</a></li>
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="user-block">
+                <a href="/login" class="login">вход</a>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="index-logo"><img src="img/BORODINSKI%20Logo.png" width="368" height="204" alt="Барбершоп Бородинский"></div>
+        <section class="features clearfix">
+            <div class="features-item">
+                <b class="features-name">быстро</b>
+                <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+            </div>
+            <div class="features-item">
+                <b class="features-name">Круто</b>
+                <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+            </div>
+            <div class="features-item">
+                <b class="features-name">Дорого</b>
+                <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+            </div>
+        </section>
+        <div class="index-content clearfix">
+            <div class="index-content-left">
+                <h2 class="index-content-title">новости</h2>
+                <ul class="news-preview">
+                    <li>
+                        <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ</p>
+                        <time datetime="2016-01-11">11 января</time>
+                    </li>
+                    <li>
+                        <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДЕТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ</p>
+                        <time datetime="2016-01-18">18 января</time>
+                    </li>
+                </ul>
+                <a href="#" class="btn">все новости</a>
+            </div>
+            <div class="index-content-right">
+                <h2 class="index-content-title">галерея</h2>
+                <div class="gallery">
+                    <figure class="gallery-content"><img src="img/foto-1.jpg" width="286" height="164" alt="фото"></figure>
+                    <button class="btn gallery-prev" type="button" disabled>назад</button>
+                    <button class="btn gallery-next" type="button">вперед</button>
+                </div>
+            </div>
+        </div>
+        <div class="index-content clearfix">
+            <div class="index-content-left">
+                <h2 class="index-content-title">контактная информация</h2>
+                <p>БАРБЕРШОП «БОРОДИНСКИЙ»
+                    <br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8
+                    <br> ТЕЛЕФОН: +7 (495) 666-02-66
+                </p>
+                <p>время работы
+                    <br> ПН — ПТ: С 10:00 ДО 22:00
+                    <br> СБ — ВС: С 10:00 ДО 19:00
+                </p>
+                <a href="/contacts" class="btn js-open-map">как проехать</a>
+                <a href="#" class="btn">обратная связь</a>
+            </div>
+            <div class="index-content-right">
+                <h2 class="index-content-title">записаться</h2>
+                <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ</p>
+                <form action="" class="appointment-form" method="post">
+                    <input type="text" name="date" value="" placeholder="дата">
+                    <input type="text" name="time" value="" placeholder="время">
+                    <input type="text" name="name" value="" placeholder="ваше имя">
+                    <input type="tel" name="phone" value="" placeholder="телефон">
+                    <button class="btn" type="submit">отправить</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="container clearfix">
+            <section class="footer-contacts">
+                БАРБЕРШОП «БОРОДИНСКИЙ»
+                <br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
+                <br>
+                <a href="#">КАК НАС НАЙТИ?</a>
+                <br> ТЕЛЕФОН: +7 (495) 666-02-66
+            </section>
+            <section class="footer-social">
+                <p>давайте дружить!</p>
+                <a href="#" class="social-btn social-btn-vk">вконтакте</a>
+                <a href="#" class="social-btn social-btn-fb">фейсбук</a>
+                <a href="#" class="social-btn social-btn-inst">инстаграмм</a>
+            </section>
+            <section class="footer-copyright">
+                <p>разработано:</p>
+                <a href="#" class="btn">HTML Academy</a>
+            </section>
+        </div>
+    </footer>
+    <div class="modal-content">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <h2 class="modal-content-title">личный кабинет</h2>
+        <p>введите свой пароль и логин</p>
+        <form action="" method="post" class="login-form">
+            <input class="icon-user" type="text" name="login" placeholder="логин">
+            <input class="icon-password" type="password" name="password" placeholder="пароль">
+            <label class="login-checkbox">
+                <input type="checkbox" name="remember">
+                <span class="checkbox-indicator"></span>запомните меня</label>
+            <a href="#" class="restore">я забыл пароль</a>
+            <button class="btn" type="submit">войти</button>
+        </form>
+    </div>
+    <div class="modal-content-map">
+        <button class="modal-content-close" type="button" title="закрыть">закрыть</button>
+     
+        <div id="yandex-map"></div>
+    </div>
+    <div class="modal-overlay"></div>
+
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=abXCy-e4FS93MdDgEh2ebHO7g-JThuYN&width=766&height=561&lang=ru_RU&sourceType=constructor&scroll=true&id=yandex-map"></script>
+        <script src="js/popup.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+{
+  "name": "Barbershop",
+  "author": "Evgeny Kudryavtsev",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vojulo/barbershop.git"
+  },
+  "homepage": "https://github.com/vojulo/barbershop",
+  "devDependencies": {
+    "eslint": "3.9.0",
+    "eslint-config-htmlacademy": "0.2.x",
+    "gulp": "3.9.1",
+    "gulp-csso": "2.0.0",
+    "del": "2.2.2",
+    "run-sequence": "1.2.2",
+    "gulp-uglify": "2.0.1",
+    "gulp-inject": "4.2.0",
+    "gulp-sass": "3.1.0",
+    "babel-preset-es2015": "6.22.0",
+    "browserify": "14.0.0",
+    "babelify": "7.3.0",
+    "vinyl-source-stream": "1.1.0",
+    "vinyl-buffer": "1.0.0",
+    "gulp-sourcemaps": "2.4.1",
+    "gulp-postcss": "6.3.0",
+    "autoprefixer": "6.7.3",
+    "css-mqpacker": "5.0.1",
+    "gulp-imagemin": "3.1.1",
+    "gulp-svgmin": "1.2.3",
+    "gulp-svgstore": "6.1.0",
+    "gulp-gh-pages": "0.5.4",
+    "gulp-rename": "1.2.2",
+    "browser-sync": "2.18.8",
+    "gulp-plumber": "1.1.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp"
+  }
+}

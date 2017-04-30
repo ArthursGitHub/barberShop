@@ -1,0 +1,19 @@
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+}
+
+.footer-contacts__address {
+  margin: 0;
+}
+
+.footer-contacts__link,
+.footer-contacts__phone {
+  display: block;
+  color: #ffffff;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

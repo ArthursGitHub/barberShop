@@ -1,0 +1,24 @@
+.page {
+  min-width: 960px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.page--index {
+  background: #000000 url(../img/index-background.jpg) no-repeat center top;
+}
+
+.page--inner {
+  background: url("../img/pattern-main.jpg");
+  color: #000000;
+}
+
+.page__content-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}

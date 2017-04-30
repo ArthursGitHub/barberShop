@@ -1,0 +1,115 @@
+.goods-filter {
+  width:220px;
+  float: left;
+}
+
+.goods-filter__group {
+  margin: 0 0 37px 0;
+  padding: 0;
+  border: none;
+}
+
+.goods-filter__title {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+
+.goods-filter__check {
+  display: none;
+}
+
+.goods-filter__check + label {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 3px 0 3px 45px;
+  margin-bottom: 13px;
+  cursor: pointer;
+
+  &:hover {
+    color: #663d15;
+  }
+}
+
+.goods-filter__check + label::before {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+}
+
+.goods-filter__check:checked + label::after {
+  position: absolute;
+  left: 4px;
+  top: 7px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -20px -20px;
+}
+
+.goods-filter__check:disabled + label,
+.goods-filter__check:disabled + label::before,
+.goods-filter__check:disabled + label::after {
+  opacity: 0.3;
+}
+
+.goods-filter__radio {
+  display: none;
+}
+
+.goods-filter__radio + label {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 3px 0 3px 45px;
+  margin-bottom: 12px;
+  cursor: pointer;
+
+  &:hover {
+    color: #663d15;
+  }
+}
+
+.goods-filter__radio + label::before {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+.goods-filter__radio:checked + label::after {
+  position: absolute;
+  left: 6px;
+  top: 9px;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #000000;
+}
+
+.goods-filter__radio:disabled + label,
+.goods-filter__radio:disabled + label::before,
+.goods-filter__radio:disabled + label::after {
+  opacity: 0.3;
+}
+
+.goods-filter__submit-btn {
+  padding-left: 33px;
+  padding-right: 28px;
+}

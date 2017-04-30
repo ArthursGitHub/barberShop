@@ -1,0 +1,68 @@
+.inner-content {
+  padding-bottom: 15px;
+  color: #000000;
+}
+
+.inner-content__heading {
+  padding-top: 46px;
+  padding-bottom: 60px;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: relative;
+    top: -25px;
+    z-index: 1;
+    display: block;
+    border-bottom: 2px solid #000000;
+  }
+}
+
+.inner-content__heading-title {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin: 0;
+  padding: 0 25px;
+  font-size: 48px;
+  line-height: 48px;
+  background: #f8f3f0 url("../img/pattern-main.jpg") repeat;
+}
+
+.inner-content__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.inner-content__table td {
+  width: 50%;
+  padding: 10px 15px;
+  border: 2px solid #000000;
+
+  &:last-child {
+    text-align: center;
+  }
+}
+
+.inner-content__list {
+  margin: 14px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.inner-content__list-item {
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    transform: rotate(45deg);
+  }
+}

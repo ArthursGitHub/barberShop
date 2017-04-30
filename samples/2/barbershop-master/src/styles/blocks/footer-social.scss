@@ -1,0 +1,75 @@
+.footer-social {
+  float: left;
+  width: 180px;
+  text-align: center;
+}
+
+.footer-social__text {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.footer-social__btn {
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  background: #000000;
+  transition:
+    background-position 0.5s,
+    background-color 0.5s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    background-color: #ffffff;
+  }
+
+  &--vk::before {
+    width: 25px;
+    height: 16px;
+    background-position: -20px -486px;
+  }
+
+  &--vk:hover::before {
+    width: 25px;
+    height: 16px;
+    background-position: -20px -542px;
+  }
+
+  &--fb::before {
+    width: 12px;
+    height: 22px;
+    background-position: -20px -72px;
+  }
+
+  &--fb:hover::before {
+    width: 12px;
+    height: 22px;
+    background-position: -20px -134px;
+  }
+
+  &--inst::before {
+    width: 21px;
+    height: 21px;
+    background-position: -20px -196px;
+  }
+
+  &--inst:hover::before {
+    width: 21px;
+    height: 21px;
+    background-position: -20px -257px;
+  }
+}
