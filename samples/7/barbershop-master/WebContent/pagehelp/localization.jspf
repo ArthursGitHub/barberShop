@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%> 
+<!DOCTYPE html>
+
+<html>
+	
+	<fmt:setLocale value="${sessionScope.local}" />
+		<fmt:setBundle basename="localization.local" var="loc" />
+	
+	
+	<fmt:message bundle="${loc}" key="main.navigation.information" var="navigation_Information" />
+	<fmt:message bundle="${loc}" key="main.navigation.news" var="navigation_news" />
+	<fmt:message bundle="${loc}" key="main.navigation.price" var="navigation_price" />
+	<fmt:message bundle="${loc}" key="main.navigation.shop" var="navigation_shop" />
+	<fmt:message bundle="${loc}" key="main.navigation.contacts" var="navigation_contacts" />
+	<fmt:message bundle="${loc}" key="main.navigation.user-block.signIn" var="navigation_signIn" />
+	<fmt:message bundle="${loc}" key="main.features-item.first.header" var="first_header" />
+	<fmt:message bundle="${loc}" key="main.features-item.first.features" var="first_features" />
+	<fmt:message bundle="${loc}" key="main.features-item.second.header" var="second_header" />
+	<fmt:message bundle="${loc}" key="main.features-item.second.features" var="second_features" />
+	<fmt:message bundle="${loc}" key="main.features-item.third.header" var="third_header" />
+	<fmt:message bundle="${loc}" key="main.features-item.third.features" var="third_features" />
+	<fmt:message bundle="${loc}" key="index_content_title_left" var="content_title_left" />
+	<fmt:message bundle="${loc}" key="index_content_left_btn" var="content_left_btn" />
+	<fmt:message bundle="${loc}" key="index_content_title_right" var="content_title_right" />
+	<fmt:message bundle="${loc}" key="index_content_right_btn_gallery_prev" var="btn_gallery_prev" />
+	<fmt:message bundle="${loc}" key="index_content_right_btn_gallery_next" var="btn_gallery_next" />
+	<fmt:message bundle="${loc}" key="index_content_title_left_inf" var="content_title_left_inf" />
+	<fmt:message bundle="${loc}" key="index_content_title_left_inf_btn_where" var="content_left_inf_btn_where" />
+	<fmt:message bundle="${loc}" key="index_content_title_left_inf_btn_feedback" var="content_left_inf_btn_feedback" />
+	<fmt:message bundle="${loc}" key="index_content_title_right_registr" var="content_title_right_registr" />
+	<fmt:message bundle="${loc}" key="index_content_title_left_inf_btn_registr" var="content_left_inf_btn_register" />
+	<fmt:message bundle="${loc}" key="footer_contact_first" var="footer_contacts_first" />
+	<fmt:message bundle="${loc}" key="footer_contact_second" var="footer_contacts_second" />
+	<fmt:message bundle="${loc}" key="footer_contact_thrid" var="footer_contacts_thrid" />
+	<fmt:message bundle="${loc}" key="footer_contact_forsth" var="footer_contacts_forsth" />
+	<fmt:message bundle="${loc}" key="footer_social" var="footer_social" />
+	<fmt:message bundle="${loc}" key="footer_copyright" var="footer_copyright" />
+	<fmt:message bundle="${loc}" key="page_registration_registr" var="registration_registr" />
+	<fmt:message bundle="${loc}" key="registration_content_headr" var="registration_headr" />
+	
+	
+</html>	

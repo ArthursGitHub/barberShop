@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Barbershop</display-name>
+  <welcome-file-list>
+    <welcome-file>index</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Controller</display-name>
+    <servlet-name>Controller</servlet-name>
+    <servlet-class>by.nikolaev.ilya.barbershop.controller.Controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>/controller</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>registration-page</servlet-name>
+    <jsp-file>/page/registration.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>registration-page</servlet-name>
+    <url-pattern>/registration</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>price-list-page</servlet-name>
+    <jsp-file>/page/price-list.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>price-list-page</servlet-name>
+    <url-pattern>/price-list</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>cabinet-page</servlet-name>
+    <jsp-file>/page/cabinet.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cabinet-page</servlet-name>
+    <url-pattern>/cabinet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>record-page</servlet-name>
+    <jsp-file>/page/record-page.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>record-page</servlet-name>
+    <url-pattern>/record-page</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>error-page</servlet-name>
+    <jsp-file>/page/error.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>error-page</servlet-name>
+    <url-pattern>/error</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>list_user</servlet-name>
+    <jsp-file>/page/listUsers.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>list_user</servlet-name>
+    <url-pattern>/list_user</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+  <servlet>
+    <servlet-name>allnews</servlet-name>
+    <jsp-file>/page/news.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>allnews</servlet-name>
+    <url-pattern>/news</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>shop</servlet-name>
+    	<jsp-file>/page/shop.jsp</jsp-file>
+   	</servlet>
+   <servlet-mapping>
+   	 <servlet-name>shop</servlet-name>
+    	<url-pattern>/shop</url-pattern>
+   </servlet-mapping>
+  
+ 	<servlet>
+   		 <servlet-name>information</servlet-name>
+    	<jsp-file>/page/inform.jsp</jsp-file>
+   	</servlet>
+   <servlet-mapping>
+   		 <servlet-name>information</servlet-name>
+    	  <url-pattern>/information</url-pattern>
+   </servlet-mapping>
+   
+   
+   <servlet>
+   		 <servlet-name>contactInformation</servlet-name>
+    	<jsp-file>/page/contacts.jsp</jsp-file>
+   	</servlet>
+   <servlet-mapping>
+   		 <servlet-name>contactInformation</servlet-name>
+    	  <url-pattern>/contact</url-pattern>
+   </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>index-page</servlet-name>
+    <jsp-file>/page/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>index-page</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+ <!--_____________________________________admin __________________-->
+ <servlet>
+    <servlet-name>logination_admin</servlet-name>
+   		 <jsp-file>/page/superregistration.jsp</jsp-file>
+  	</servlet>
+ 	 <servlet-mapping>
+    	<servlet-name>logination_admin</servlet-name>
+    <url-pattern>/admin.do</url-pattern>
+ </servlet-mapping>
+ 
+	 <servlet>
+    <servlet-name>record_news</servlet-name>
+    <jsp-file>/WEB-INF/adminPanel/recordnews.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>record_news</servlet-name>
+    <url-pattern>/new_news</url-pattern>
+  </servlet-mapping>
+
+
+	<servlet>
+   		 <servlet-name>registration_Haircut</servlet-name>
+    	<jsp-file>/WEB-INF/adminPanel/registrationHaircut.jsp</jsp-file>
+   	</servlet>
+   <servlet-mapping>
+   		 <servlet-name>registration_Haircut</servlet-name>
+    	  <url-pattern>/registration_for_haircut</url-pattern>
+   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>superUser</servlet-name>
+    <jsp-file>/WEB-INF/adminPanel/superuser.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>superUser</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+ 
+
+ 
+</web-app>

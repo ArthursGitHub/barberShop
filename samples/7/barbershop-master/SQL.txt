@@ -1,0 +1,49 @@
+CREATE DATABASE barbershop;
+
+USE barbershop;
+
+CREATE TABLE user
+(
+user_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+user_name VARCHAR(25) NOT NULL,
+user_surname VARCHAR(25) NOT NULL,
+user_email VARCHAR(25) NOT NULL,
+user_login VARCHAR(25) NOT NULL,
+user_password VARCHAR(15) NOT NULL
+);
+
+CREATE TABLE registration_haircut
+(
+haircut_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+client_name VARCHAR(25) NOT NULL,
+haircut_date DATE NOT NULL,
+haircut_time VARCHAR(10) NOT NULL,
+client_phone VARCHAR(15),
+user_id INT, 
+FOREIGN KEY (user_id) REFERENCES user (user_id)	
+);
+
+CREATE TABLE super_user
+(
+admin_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+admin_name VARCHAR(25) NOT NULL,
+admin_surname VARCHAR(25) NOT NULL,
+admin_login VARCHAR(25) NOT NULL,
+admin_password VARCHAR(15) NOT NULL,
+admin_status BOOLEAN NOT NULL
+);
+
+ 
+CREATE TABLE news 
+(
+  INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+news_title VARCHAR(250) NOT NULL,
+news_date DATE NOT NULL,
+news_content TEXT(65000)
+);
+
+
+INSERT INTO super_user 
+(admin_name, admin_surname, admin_login, admin_password, admin_status)
+VALUES
+('Илья', 'Николаев', 'admin', 'admin', true);
